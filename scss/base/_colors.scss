@@ -1,0 +1,31 @@
+//- Element Colors
+$gray-lt:                   #f6f6f6;
+$gray:                      #cccccc;
+$gray-md:                   #999999;
+$gray-dk:                   #343434;
+
+$brand-primary:             #4483ce;
+$brand-secondary:           #d9d9d9;
+
+$success:                   #93c461;
+$info:                      #5bc0de;
+$warning:                   #f29f4e;
+$danger:                    #e24f44;
+
+//-- Document colors
+$page-bg:                   white;
+
+$text-dark:                 #333333;
+$text-color:                $gray-dk;
+$text-light:                darken($gray,10%);
+
+$link-color:                $brand-primary;
+$link-active:               darken($brand-primary,10%);
+
+$border-default:            darken($gray-lt,20%);
+$border-lt:                 $gray-lt;
+
+$hr-bg:                     $gray-lt;
+
+$footer-bg:                 $gray-dk;
+$footer-color:              lighten($gray-lt,30%);

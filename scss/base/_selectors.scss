@@ -1,0 +1,136 @@
+// setup the css4 variable definitions
+@if $css4-variables == true {
+  :root {
+    // for each variable map
+    @each $var-map-name, $var-map in $var-maps {
+      // for each variable in the variable map
+      @each $var, $val in $var-map {
+        // if it is a map, go another level deep
+        @if type-of($val) == map {
+          // each in the map
+          @each $var-n, $val-n in $val {
+            // do the definition
+            #{--$var-map-name}-#{$var}-#{$var-n}: $val-n;
+          }
+        } @else {
+          // do the definition
+          #{--$var-map-name}-#{$var}: $val;
+        }
+      }
+    }
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  position:relative;
+  min-height:100%;
+  box-sizing: border-box;
+  @include v(font-size, body);
+  @media (min-width:$screen-lg) {
+    font-size:$font-size-base + 2px;
+  }
+}
+
+body {
+  margin:0;
+  padding:0;
+  @include font-smoothing;
+  @include v(font-family, body);
+  @include v(line-height, body);
+  @include v(background-color, background);
+  @include v(color, text, null);
+}
+
+a {
+  cursor:pointer;
+  text-decoration:none;
+  @include v(color, link);
+  &:hover,&:focus,&:active {
+    @include v(color, link-active);
+  }
+  // If there isn't a class, give it an underline
+  // &[href]:not([class]) {
+  //   text-decoration:underline;
+  // }
+}
+
+hr {
+  background-color: $border-lt;
+  border: 0;
+  display: block;
+  height: 0.125rem;
+  margin-bottom: $gap;
+  margin-top: $gap;
+}
+
+// Show a really annoying broken image
+img {
+  display:block;
+  height:auto;
+  position:relative;
+  text-align:center;
+  max-width:100%;
+  height:auto;
+  &:before,&:after {
+    display:block;
+  }
+  &:before {
+    content:"We're sorry, this image could not be found";
+  }
+  &:after {
+    content:"(url: " attr(src) ")";
+  }
+}
+
+article,aside,section,header,footer {
+  display:block;
+}
+
+blockquote {
+  display:block;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+// Avoid mobile browser zooming on form elements.
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  font-size: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  line-height:1.1;
+  letter-spacing:-0.035rem;
+  @include v(font-family, head);
+  @include v(font-weight, head);
+}
+
+h1 {
+  @include v(font-size, h1);
+}
+h2 {
+  @include v(font-size, h2);
+}
+h3 {
+  @include v(font-size, h3);
+}
+h4 {
+  @include v(font-size, h4);
+}
+h5 {
+  @include v(font-size, h5);
+}
+h6 {
+  @include v(font-size, h6);
+}
+
+label {
+  @include font-semibold;
+}

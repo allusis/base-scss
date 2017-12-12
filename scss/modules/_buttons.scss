@@ -1,0 +1,61 @@
+.btn-g {
+  display: inline-flex;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border:0;
+  white-space: nowrap;
+  user-select:none;
+  @include font-bold;
+  padding:0 $gap-sm;
+  min-height:$input-height;
+  text-transform:uppercase;
+  font-size:1rem;
+  letter-spacing:-0.025rem;
+  align-items:center;
+  justify-content:center;
+}
+
+button {
+  background:transparent;
+  appearance:none;
+  border:0;
+}
+
+.btn-back {
+  display:inline-flex;
+  align-items:center;
+  margin-bottom:$gap;
+  text-transform:uppercase;
+  font-size:0.75rem;
+  transition:all 0.15s;
+  @include font-bold;
+  svg {
+    margin-right:$gap-xs;
+    transition:all 0.15s;
+  }
+  &:hover,&:focus {
+    svg {
+      animation: bounce-left 0.5s forwards;
+    }
+  }
+}
+
+.btn-forward {
+  display:inline-flex;
+  align-items:center;
+  text-transform:uppercase;
+  @include font-bold;
+  font-size:0.875rem;
+  padding-left:0;
+  padding-right:0;
+  svg {
+    margin-left:$gap-xs;
+    width:$gap-sm;
+    height:$gap-sm;
+  }
+}
+

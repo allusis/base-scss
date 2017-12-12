@@ -1,0 +1,91 @@
+
+// Basic responsive table
+.table-default {
+  width:100%;
+  border-collapse:collapse;
+  thead {
+    @media (max-width:$screen-sm) {
+      display:none;
+    }
+    > tr {
+      > th {
+        font-weight:500;
+        font-size:12px;
+        text-transform:uppercase;
+        position:relative;
+        &:not(:first-of-type){
+          border-left:1px solid #eee;
+        }
+        &:not(:last-of-type) {
+          border-right:1px solid #eee;
+        }
+      }
+    }
+  }
+  tbody {
+    > tr {
+      > td {
+        padding:$gap-xs $gap-sm;
+        vertical-align:top;
+        color:#888;
+      }
+    }
+  }
+  &.table-striped tbody tr:nth-of-type(odd) {
+    background:rgba(black,0.025);
+  }
+  @media screen and (max-width: 767px) {
+    border: 0;
+    thead {display:none;}
+    tr {
+      margin-bottom: 10px;
+      display: block;
+      border:1px solid #eee;
+      background:white;
+    }
+    td {
+      text-align: right;
+      font-size: 13px;
+      border-bottom: 1px solid #eee;
+      border-top:0 !important;
+      &:last-child {
+        border-bottom: 0;
+      }
+      &:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+      }
+    }
+    tbody td, tbody th {
+      display:block !important
+    }
+    .block-column {
+      text-align:left;
+      &:before {
+        float:none;
+        display:block;
+        margin-bottom:$gap-xs;
+      }
+    }
+  }
+}
+
+.table-default tbody
+ > tr > td:first-of-type {
+    text-align: left;
+    position: relative;
+}
+
+.table-default tbody
+ > tr > td:first-of-type:before {
+    display: block;
+    float: none;
+}
+
+.table-default tbody .name {
+  @include font-semibold;
+}
+
+
+
