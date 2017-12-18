@@ -52,7 +52,7 @@ $gap-lg:                    4rem;
 
 //-- Grid
 $grid-columns:              12;
-$gutter-width:              $gap-sm + $gap-xs;
+$gutter-width:              $gap;
 $outer-margin:              $gap-lg;
 $gutter-compensation:       $gutter-width * .5 * -1;
 $half-gutter-width:         $gutter-width * .5;
@@ -68,8 +68,8 @@ $screen-xl:                 1440px;
 $screen-xl-min:             $screen-xl - 1px;
 
 //-- Typography
-$font-regular:              "Roboto", sans-serif;
-$font-heading:              "Roboto Condensed", sans-serif;
+$font-regular:              "Helvetica", sans-serif;
+$font-heading:              "Helvetica", sans-serif;
 $font-light:                $font-regular;
 $font-semibold:             $font-regular;
 $font-bold:                 $font-regular;
@@ -90,37 +90,20 @@ $font-size-h4:              1.25rem;
 $font-size-h5:              $font-size-base;
 $font-size-h6:              0.875rem;
 
-
 //--- Layout
 $header-height:             8rem;
-$header-height-collapsed:   6.5rem;
-$header-padding-x:          0;
-$header-padding-y:          0;
 $header-bg:                 black;
-$header-nav-angle:          1.875rem;
-$header-nav-link-height:    2.5rem;
-$header-nav-angle-sm:       1.875rem;
-$header-nav-link-height-sm: 4rem;
 $header-color:              white;
 
 $logo-height:               5.25rem;
 $logo-height-collapsed:     4rem;
 
-$tag-angle:                 1.875rem;
-$tag-link-height:           2.5rem;
-$tag-angle-sm:              1.875rem;
-$tag-link-height-sm:        4rem;
-
 $sidebar-width:             16rem;
-
 
 $footer-height:             $gap-md;
 $footer-padding-x:          0;
 $footer-padding-y:          $gap-md;
 
-
 $input-height:              $gap + 0.5rem;
 
-
-$triangle-lg: 480px;
 
