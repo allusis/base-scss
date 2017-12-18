@@ -13,6 +13,7 @@
   "atoms/buttons",
   "atoms/forms",
   "atoms/helpers",
+  "atoms/icons",
   "atoms/media",
   "atoms/spacing",
   "atoms/tables";
@@ -28,9 +29,11 @@
   "organisms/page";
 
 //-- Templates
-// @import "templates/";
+@import
+  "templates/default";
 
 //-- Pages
-// @import "pages/";
+@import
+  "pages/landing";
 
-/* Generated from /scss/main.scss on: 2017-12-18T17:56:08Z */
+/* Generated from /scss/main.scss on: 2017-12-18T19:20:12Z  */

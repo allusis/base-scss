@@ -55,6 +55,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/atoms\/_icons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/atoms\/_icons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/atoms\/_media.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -192,6 +205,16 @@
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
+	"\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/main.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -264,6 +287,32 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/pages\/_landing.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/pages\/_landing.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/templates\/_default.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/templates\/_default.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		}
 	},
 "hooks": [

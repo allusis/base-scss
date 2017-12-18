@@ -1,41 +1,36 @@
-.btn-g {
-  display: inline-flex;
-  margin-bottom: 0;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
+.btn-#{$framework-prefix} {
   background-image: none;
-  border:0;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  padding: $gap-xs $gap-sm;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  vertical-align: middle;
   white-space: nowrap;
-  user-select:none;
-  @include font-bold;
-  padding:0 $gap-sm;
-  min-height:$input-height;
-  text-transform:uppercase;
-  font-size:1rem;
-  letter-spacing:-0.025rem;
-  align-items:center;
-  justify-content:center;
+  @include font-semibold;
 }
 
-button {
-  background:transparent;
-  appearance:none;
-  border:0;
+.btn-back,.btn-forward {
+  align-items: center;
+  display: inline-flex;
+  font-size: 0.8rem;
+  margin-bottom: $gap;
+  text-transform: uppercase;
+  transition: all 0.15s;
+  @include font-bold;
+  svg {
+    transition: all 0.15s;
+    width: $gap-sm;
+    height: $gap-sm;
+  }
 }
 
 .btn-back {
-  display:inline-flex;
-  align-items:center;
-  margin-bottom:$gap;
-  text-transform:uppercase;
-  font-size:0.75rem;
-  transition:all 0.15s;
-  @include font-bold;
   svg {
-    margin-right:$gap-xs;
-    transition:all 0.15s;
+    margin-right: $gap-xs;
   }
   &:hover,&:focus {
     svg {
@@ -45,17 +40,13 @@ button {
 }
 
 .btn-forward {
-  display:inline-flex;
-  align-items:center;
-  text-transform:uppercase;
-  @include font-bold;
-  font-size:0.875rem;
-  padding-left:0;
-  padding-right:0;
   svg {
-    margin-left:$gap-xs;
-    width:$gap-sm;
-    height:$gap-sm;
+    margin-left: $gap-xs;
+  }
+  &:hover,&:focus {
+    svg {
+      animation: bounce-right 0.5s forwards;
+    }
   }
 }
 

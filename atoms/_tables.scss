@@ -1,40 +1,40 @@
 .table-default {
-  width:100%;
-  border-collapse:collapse;
+  border-collapse: collapse;
+  width: 100%;
   tr {
     @media (max-width:$screen-sm-min) {
-      margin-bottom: $gap-sm;
+      border: 1px solid $border-default;
       display: block;
-      border:1px solid $border-default;
+      margin-bottom: $gap-sm;
     }
   }
   thead {
     @media (max-width:$screen-sm-min) {
-      display:none;
+      display: none;
     }
     th {
+      font-size: .9rem;
+      position: relative;
+      text-transform: uppercase;
       @include font-semibold;
-      font-size:0.9rem;
-      text-transform:uppercase;
-      position:relative;
       &:not(:first-of-type){
-        border-left:1px solid $border-default;
+        border-left: 1px solid $border-default;
       }
       &:not(:last-of-type) {
-        border-right:1px solid $border-default;
+        border-right: 1px solid $border-default;
       }
     }
   }
   tbody {
     td {
-      padding:$gap-xs $gap-sm;
-      vertical-align:top;
-      color:$gray-md;
-      @media (max-width:$screen-sm-min) {
-        display:block !important;
-        text-align: right;
+      color: $gray-md;
+      padding: $gap-xs $gap-sm;
+      vertical-align: top;
+      @media (max-width: $screen-sm-min) {
         border-bottom: 1px solid $border-default;
-        border-top:0 !important;
+        border-top: 0 !important;
+        display: block !important;
+        text-align: right;
         &:last-child {
           border-bottom: 0;
         }
@@ -45,8 +45,8 @@
         }
       }
       &:first-of-type {
-        text-align: left;
         position: relative;
+        text-align: left;
         &::before {
           display: block;
           float: none;

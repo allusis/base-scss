@@ -67,6 +67,12 @@ hr {
   margin-top: $gap;
 }
 
+button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+}
+
 // Show a really annoying broken image
 img {
   display:block;
@@ -79,22 +85,16 @@ img {
     display:block;
   }
   &:before {
-    content:"We're sorry, this image could not be found";
+    content:"Image not found";
   }
   &:after {
     content:"(url: " attr(src) ")";
   }
 }
 
-article,aside,section,header,footer {
-  display:block;
-}
-
-blockquote {
-  display:block;
-  width:100%;
-  margin:0;
-  padding:0;
+article,aside,section,header,footer,blockquote {
+  display: block;
+  width: 100%;
 }
 
 // Avoid mobile browser zooming on form elements.
