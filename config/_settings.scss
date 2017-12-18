@@ -39,10 +39,6 @@ $border-lt:                 $gray-lt;
 
 $hr-bg:                     $gray-lt;
 
-$footer-bg:                 $gray-dk;
-$footer-color:              lighten($gray-lt,30%);
-
-
 //--- Spacing
 $gap-xs:                    0.5rem;
 $gap-sm:                    1rem;
@@ -94,16 +90,16 @@ $font-size-h6:              0.875rem;
 $header-height:             8rem;
 $header-bg:                 black;
 $header-color:              white;
-
 $logo-height:               5.25rem;
 $logo-height-collapsed:     4rem;
-
-$sidebar-width:             16rem;
 
 $footer-height:             $gap-md;
 $footer-padding-x:          0;
 $footer-padding-y:          $gap-md;
+$footer-bg:                 $gray-dk;
+$footer-color:              lighten($gray-lt,30%);
 
+//--- Forms
 $input-height:              $gap + 0.5rem;
 
 
