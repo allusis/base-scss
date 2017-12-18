@@ -1,34 +1,38 @@
-//-- Base
+//-- Config and utilities
 @import
-  "base/colors",
-  "base/settings",
-  "base/variable-maps",
-  "base/mixins",
-  "base/typography",
-  "base/selectors",
-  "base/functions",
-  "base/spacing",
-  "base/helpers";
+  "config/settings",
+  "config/typography",
+  "config/mixins",
+  "config/functions",
+  "config/variable-maps",
+  "config/selectors",
+  "config/debug";
 
-//-- layout
+//-- Atoms
 @import
-  "layout/header",
-  "layout/footer",
-  "layout/page";
+  "atoms/buttons",
+  "atoms/forms",
+  "atoms/helpers",
+  "atoms/media",
+  "atoms/spacing",
+  "atoms/tables";
 
-//-- Modules
+//-- Molecules
 @import
-  "modules/flexbox-grid",
-  "modules/media",
-  "modules/buttons",
-  "modules/forms",
-  "modules/tables";
+  "molecules/flexbox-grid";
 
-//-- States
+//-- Organisms
 @import
-  "state/debug";
+  "organisms/footer",
+  "organisms/header",
+  "organisms/page";
 
-/*
-Generated from /scss/main.scss on:
-2017-12-12T02:58:31Z
-*/
+//-- Templates
+//@import
+//  "templates/";
+
+//-- Pages
+//@import
+//  "pages/*";
+
+/* Generated from /scss/main.scss on: 2017-12-18T17:56:08Z */
