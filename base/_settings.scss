@@ -25,14 +25,13 @@ $gutter-compensation:       $gutter-width * .5 * -1;
 $half-gutter-width:         $gutter-width * .5;
 
 //-- Viewports
-$screen-xs:                 480px;
-$screen-sm-min:             767px;
-$screen-sm:                 $screen-sm-min + 1px;
-$screen-sm-ls:              1024px;
-$screen-md:                 $screen-sm-ls + 1px;
-$screen-lg:                 1200px;
-$screen-xl:                 1440px;
-$screen-xl-min:             $screen-xl - 1px;
+$screen-xs:                 30rem;
+$screen-sm-min:             47.94rem;
+$screen-sm:                 48rem;
+$screen-sm-ls:              64rem;
+$screen-md:                 61.94rem;
+$screen-lg:                 75rem;
+$screen-xl:                 87.5rem;
 
 //-- Typography
 $font-regular:              "Roboto", sans-serif;
