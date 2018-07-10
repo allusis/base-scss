@@ -22,8 +22,10 @@ $screen-lg:                 75rem;
 $screen-xl:                 90rem;
 
 //-- Typography
-$font-regular:              "Roboto", sans-serif;
-$font-heading:              "Roboto Condensed", sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+$font-regular:              "Open Sans", sans-serif;
+$font-heading:              "Open Sans", sans-serif;
 $font-size-base:            14px;
 $line-height-small:         1.5;
 $line-height-base:          1.428571429;

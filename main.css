@@ -1,4 +1,5 @@
-:root { --color-text: #343434; --color-background: white; --color-link: #4483ce; --color-link-active: #245288; --font-family-body: "Roboto", sans-serif; --font-family-head: "Roboto Condensed", sans-serif; --font-weight-body: 400; --font-weight-head: 700; --font-size-body: 14px; --font-size-h1: 3.5rem; --font-size-h2: 2rem; --font-size-h3: 1.5rem; --font-size-h4: 1.25rem; --font-size-h5: 14px; --font-size-h6: 0.875rem; --font-leading-body: 1.428571429; --font-leading-head: 1.3333333; }
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+:root { --color-text: #343434; --color-background: white; --color-link: #4483ce; --color-link-active: #245288; --font-family-body: "Open Sans", sans-serif; --font-family-head: "Open Sans", sans-serif; --font-weight-body: 400; --font-weight-head: 700; --font-size-body: 14px; --font-size-h1: 3.5rem; --font-size-h2: 2rem; --font-size-h3: 1.5rem; --font-size-h4: 1.25rem; --font-size-h5: 14px; --font-size-h6: 0.875rem; --font-leading-body: 1.428571429; --font-leading-head: 1.3333333; }
 
 *, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
 
@@ -6,7 +7,7 @@ html { position: relative; min-height: 100%; -webkit-box-sizing: border-box; box
 
 @media (min-width: 75rem) { html { font-size: 16px; } }
 
-body { margin: 0; padding: 0; font-smooth: always; font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; font-family: "Roboto", sans-serif; font-family: var(--font-family-body); line-height: 1.428571429; line-height: var(--font-leading-body); background-color: white; background-color: var(--color-background); color: var(--color-text); }
+body { margin: 0; padding: 0; font-smooth: always; font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; font-family: "Open Sans", sans-serif; font-family: var(--font-family-body); line-height: 1.428571429; line-height: var(--font-leading-body); background-color: white; background-color: var(--color-background); color: var(--color-text); }
 
 a { cursor: pointer; text-decoration: none; color: #4483ce; color: var(--color-link); }
 
@@ -29,7 +30,7 @@ blockquote { display: block; width: 100%; margin: 0; padding: 0; }
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (max-device-width: 1024px) { input, select, textarea { font-size: 14px; }
   input:focus, select:focus, textarea:focus { font-size: 14px; } }
 
-h1, h2, h3, h4, h5, h6 { line-height: 1.1; font-family: "Roboto Condensed", sans-serif; font-family: var(--font-family-head); font-weight: 700; font-weight: var(--font-weight-head); }
+h1, h2, h3, h4, h5, h6 { line-height: 1.1; font-family: "Open Sans", sans-serif; font-family: var(--font-family-head); font-weight: 700; font-weight: var(--font-weight-head); }
 
 h1 { font-size: 3.5rem; font-size: var(--font-size-h1); }
 
@@ -83,7 +84,7 @@ label { font-weight: 500; }
 
 button { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: transparent; border: 0; }
 
-.skip-link { position: absolute; color: white; z-index: 100; padding: 0.5rem 2rem; position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; border: 0; }
+.skip-link { position: absolute; color: white; z-index: 100; padding: 0.5rem 2rem; position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 0.0625rem; width: 0.0625rem; margin: -0.0625rem; border: 0; }
 
 .skip-link:focus { clip: initial; height: auto; width: auto; margin: 0; color: white; }
 
