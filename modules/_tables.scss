@@ -1,53 +1,52 @@
-
-// Basic responsive table
 .table-default {
-  width:100%;
-  border-collapse:collapse;
+  border-collapse: collapse;
+  width: 100%;
   thead {
     @media (max-width:$screen-sm) {
       display:none;
     }
-    > tr {
-      > th {
-        font-weight:500;
-        font-size:12px;
-        text-transform:uppercase;
-        position:relative;
-        &:not(:first-of-type){
-          border-left:1px solid #eee;
-        }
-        &:not(:last-of-type) {
-          border-right:1px solid #eee;
-        }
+    > tr th {
+      font-weight: $font-weight-semibold;
+      font-size: $font-size-base;
+      position: relative;
+      text-transform: uppercase;
+      &:not(:first-of-type){
+        border-left: $one solid $border-default;
+      }
+      &:not(:last-of-type) {
+        border-right: $one solid $border-default;
       }
     }
   }
   tbody {
-    > tr {
-      > td {
-        padding:$gap-xs $gap-sm;
-        vertical-align:top;
-        color:#888;
-      }
+    > tr td {
+      color: $gray-md;
+      padding: $gap-xs $gap-sm;
+      vertical-align: top;
     }
   }
   &.table-striped tbody tr:nth-of-type(odd) {
-    background:rgba(black,0.025);
+    background: rgba(black,0.025);
   }
-  @media screen and (max-width: 767px) {
+  .name {
+    @include font-semibold;
+  }
+  @media screen and (max-width: $screen-sm-min) {
     border: 0;
-    thead {display:none;}
+    thead {
+      display: none;
+    }
     tr {
-      margin-bottom: 10px;
+      background: white;
+      border: $one solid $border-default;
       display: block;
-      border:1px solid #eee;
-      background:white;
+      margin-bottom: $gap-sm;
     }
     td {
+      border-bottom: $one solid $border-default;
+      border-top: 0 !important;
+      font-size: $font-size-base;
       text-align: right;
-      font-size: 13px;
-      border-bottom: 1px solid #eee;
-      border-top:0 !important;
       &:last-child {
         border-bottom: 0;
       }
@@ -60,32 +59,5 @@
     tbody td, tbody th {
       display:block !important
     }
-    .block-column {
-      text-align:left;
-      &:before {
-        float:none;
-        display:block;
-        margin-bottom:$gap-xs;
-      }
-    }
   }
 }
-
-.table-default tbody
- > tr > td:first-of-type {
-    text-align: left;
-    position: relative;
-}
-
-.table-default tbody
- > tr > td:first-of-type:before {
-    display: block;
-    float: none;
-}
-
-.table-default tbody .name {
-  @include font-semibold;
-}
-
-
-

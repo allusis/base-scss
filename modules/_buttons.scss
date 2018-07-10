@@ -1,41 +1,40 @@
-.btn-g {
-  display: inline-flex;
-  margin-bottom: 0;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
+.btn {
+  align-items: center;
   background-image: none;
   border:0;
-  white-space: nowrap;
-  user-select:none;
-  @include font-bold;
-  padding:0 $gap-sm;
-  min-height:$input-height;
-  text-transform:uppercase;
-  font-size:1rem;
-  letter-spacing:-0.025rem;
-  align-items:center;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
   justify-content:center;
+  margin: 0;
+  min-height: $input-height;
+  padding:0 $gap-sm;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  @include font-bold;
 }
 
 button {
-  background:transparent;
-  appearance:none;
-  border:0;
+  appearance: none;
+  background: transparent;
+  border: 0;
 }
 
 .btn-back {
-  display:inline-flex;
-  align-items:center;
-  margin-bottom:$gap;
-  text-transform:uppercase;
-  font-size:0.75rem;
-  transition:all 0.15s;
+  align-items: center;
+  display: inline-flex;
+  font-size: 0.8rem;
+  margin-bottom: $gap;
+  text-transform: uppercase;
+  transition: all 0.15s;
   @include font-bold;
   svg {
-    margin-right:$gap-xs;
-    transition:all 0.15s;
+    margin-right: $gap-xs;
+    transition: all 0.15s;
   }
   &:hover,&:focus {
     svg {
@@ -45,17 +44,17 @@ button {
 }
 
 .btn-forward {
-  display:inline-flex;
-  align-items:center;
-  text-transform:uppercase;
+  align-items: center;
+  display: inline-flex;
+  font-size: 0.8rem;
+  padding-left: 0;
+  padding-right: 0;
+  text-transform: uppercase;
   @include font-bold;
-  font-size:0.875rem;
-  padding-left:0;
-  padding-right:0;
   svg {
-    margin-left:$gap-xs;
-    width:$gap-sm;
-    height:$gap-sm;
+    height: $gap-sm;
+    margin-left: $gap-xs;
+    width: $gap-sm;
   }
 }
 

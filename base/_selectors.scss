@@ -1,19 +1,14 @@
 // setup the css4 variable definitions
 @if $css4-variables == true {
   :root {
-    // for each variable map
     @each $var-map-name, $var-map in $var-maps {
-      // for each variable in the variable map
       @each $var, $val in $var-map {
         // if it is a map, go another level deep
         @if type-of($val) == map {
-          // each in the map
           @each $var-n, $val-n in $val {
-            // do the definition
             #{--$var-map-name}-#{$var}-#{$var-n}: $val-n;
           }
         } @else {
-          // do the definition
           #{--$var-map-name}-#{$var}: $val;
         }
       }
@@ -31,7 +26,7 @@ html {
   box-sizing: border-box;
   @include v(font-size, body);
   @media (min-width:$screen-lg) {
-    font-size:$font-size-base + 2px;
+    font-size: $font-size-base + 2px;
   }
 }
 
@@ -97,17 +92,20 @@ blockquote {
   padding:0;
 }
 
-// Avoid mobile browser zooming on form elements.
-input[type="text"],
-input[type="number"],
-select,
-textarea {
-  font-size: 1rem;
+// Avoid iOS browsers from zooming on form element focus.
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-device-width:1024px) {
+  input,
+  select,
+  textarea {
+    font-size: $font-size-base;
+    &:focus {
+      font-size: $font-size-base;
+    }
+  }
 }
 
 h1,h2,h3,h4,h5,h6 {
   line-height:1.1;
-  letter-spacing:-0.035rem;
   @include v(font-family, head);
   @include v(font-weight, head);
 }
