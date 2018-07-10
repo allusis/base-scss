@@ -83,6 +83,10 @@ label { font-weight: 500; }
 
 button { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: transparent; border: 0; }
 
+.skip-link { position: absolute; color: white; z-index: 100; padding: 0.5rem 2rem; position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; border: 0; }
+
+.skip-link:focus { clip: initial; height: auto; width: auto; margin: 0; color: white; }
+
 .btn-back { -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; font-size: 0.8rem; margin-bottom: 2rem; text-transform: uppercase; -webkit-transition: all 0.15s; transition: all 0.15s; font-weight: 700; }
 
 .btn-back svg { margin-right: 0.5rem; -webkit-transition: all 0.15s; transition: all 0.15s; }

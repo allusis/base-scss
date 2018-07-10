@@ -24,6 +24,27 @@ button {
   border: 0;
 }
 
+.skip-link {
+	position: absolute;
+	color: white;
+	z-index: 100;
+	padding: $gap-xs $gap;
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	border: 0;
+	&:focus {
+		clip:initial;
+		height:auto;
+		width:auto;
+		margin:0;
+		color:white;
+	}
+}
+
 .btn-back {
   align-items: center;
   display: inline-flex;
